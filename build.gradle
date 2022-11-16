@@ -16,6 +16,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'com.google.code.gson:gson:2.10'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
     implementation 'javax.xml.bind:jaxb-api:2.3.1'
     implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
     implementation 'com.opencsv:opencsv:5.7.1'
