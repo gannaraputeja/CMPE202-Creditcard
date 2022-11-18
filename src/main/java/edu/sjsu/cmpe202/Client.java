@@ -16,22 +16,24 @@ import java.util.List;
 public class Client {
 
     private static CreditCard creditCard;
-    private List<CreditCardDetail> creditCardDetailList;
-    private List<CreditCardResponse> creditCardResponseList = new ArrayList<>();
 
     public Client() {
         creditCard = CreditCard.link(new MasterCC(), new VisaCC(), new AmExCC(), new DiscoverCC());
     }
 
-    public void readInput(String inputFileName) throws IOException, JAXBException {
+    public List<CreditCardDetail> readInput(String inputFileName) throws IOException, JAXBException {
+
+        List<CreditCardDetail> creditCardDetailList;
         String extension = Util.getFileExtension(inputFileName);
         FileHandler fileHandler = FileHandlerFactory.getFileHandler(extension);
 
         creditCardDetailList = fileHandler.readInputFile(inputFileName);
 
+        return creditCardDetailList;
     }
 
-    public void processCreditCardDetails() {
+    public List<CreditCardResponse> processCreditCardDetails(List<CreditCardDetail> creditCardDetailList) {
+        List<CreditCardResponse> creditCardResponseList = new ArrayList<>();
         for(CreditCardDetail creditCardDetail : creditCardDetailList) {
             CreditCardResponse creditCardResponse = new CreditCardResponse(creditCardDetail.getCardNumber());
             if(Util.isNullorEmpty(creditCardDetail.getCardNumber())){
@@ -63,9 +65,10 @@ public class Client {
             }
             creditCardResponseList.add(creditCardResponse);
         }
+        return creditCardResponseList;
     }
 
-    public void writeOutput(String outputFilename) throws IOException, JAXBException, CsvRequiredFieldEmptyException, CsvDataTypeMismatchException {
+    public void writeOutput(String outputFilename, List<CreditCardResponse> creditCardResponseList) throws IOException, JAXBException, CsvRequiredFieldEmptyException, CsvDataTypeMismatchException {
         String extension = Util.getFileExtension(outputFilename);
 
         FileHandler fileHandler = FileHandlerFactory.getFileHandler(extension);
