@@ -8,6 +8,10 @@ plugins {
 group 'edu.sjsu.cmpe202'
 version '1.0-SNAPSHOT'
 
+application {
+    mainClassName = "edu.sjsu.cmpe202.Main"
+}
+
 repositories {
     mavenCentral()
 }
