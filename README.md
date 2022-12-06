@@ -55,7 +55,7 @@ $ ./gradlew bootRun --args="input_file-1.csv output.csv"
 
 
 ### References
-- https://sjsu.instructure.com/courses/1489706/assignments/6384697
+- https://github.com/gopinathsjsu/individual-project-cmpe202-01-gannaraputeja/blob/main/ProblemStatement.docx
 
 
 
