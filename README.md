@@ -9,7 +9,7 @@
 <img src="CreditCardApplication.jpg">
 
 ### Documentation
-https://github.com/gopinathsjsu/individual-project-cmpe202-01-gannaraputeja/CreditCardApplication.pdf
+https://github.com/gopinathsjsu/individual-project-cmpe202-01-gannaraputeja/blob/main/CreditCardApplication.pdf
 
 ### Steps to Run application
 - Execute below command to build.
