@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CARDS>
+    <CARD>
+        <CARD_NUMBER>6011111100007756</CARD_NUMBER>
+        <CARD_TYPE>Discover</CARD_TYPE>
+    </CARD>
+    <CARD>
+        <CARD_NUMBER>3601112345678789</CARD_NUMBER>
+        <CARD_TYPE>Invalid: Not a possible card number</CARD_TYPE>
+    </CARD>
+    <CARD>
+        <CARD_NUMBER>5167894523129089</CARD_NUMBER>
+        <CARD_TYPE>MasterCard</CARD_TYPE>
+    </CARD>
+    <CARD>
+        <CARD_NUMBER>4123456789123999</CARD_NUMBER>
+        <CARD_TYPE>Visa</CARD_TYPE>
+    </CARD>
+</CARDS>

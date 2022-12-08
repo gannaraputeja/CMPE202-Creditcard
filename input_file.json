@@ -55,7 +55,7 @@
 		cardHolderName: "Jill Davis"
 	},
 	{
-		cardNumber:"",
+		cardNumber:,
 		expirationDate: "08/26",
 		cardHolderName: "John Doe"
 	}
